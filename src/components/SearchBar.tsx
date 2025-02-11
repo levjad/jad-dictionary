@@ -21,7 +21,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
                 placeholder="Search for a word..."
                 value={input}
                 onChange={(e) => setInput(e.target.value)}
-                className="input input-bordered w-full pr-12"
+                className="input w-full pr-12 bg-base-200"
             />
             <button
                 type="submit"

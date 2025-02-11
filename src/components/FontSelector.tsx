@@ -30,7 +30,7 @@ const FontSelector: React.FC = () => {
                 id="font-select"
                 value={selectedFont}
                 onChange={(e) => setSelectedFont(e.target.value as FontKey)}
-                className="select select-bordered"
+                className="select hover:bg-base-200"
             >
                 {Object.keys(fonts).map((font) => (
                     <option key={font} value={font}>

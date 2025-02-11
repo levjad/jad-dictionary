@@ -53,8 +53,8 @@ const WordResult: React.FC<WordResultProps> = ({ word }) => {
                 {data.phonetics?.[0]?.audio && <AudioPlayer audioUrl={data.phonetics[0].audio} />}
             </div>
             {data.meanings.map((meaning, idx) => (
-                <div key={idx} className="mt-6">
-                    <div className="divider divider-start italic font-semibold my-6">{meaning.partOfSpeech}</div>
+                <div key={idx} className="py-2">
+                    <div className="divider divider-start italic font-semibold my-8">{meaning.partOfSpeech}</div>
                     <h2 className="text-lg text-gray-700 font-semibold my-3">Meanings</h2>
                     <ul className="list-disc pl-10 marker:text-blue-500 space-y-3">
                         {meaning.definitions.map((def, index) => (
@@ -68,7 +68,7 @@ const WordResult: React.FC<WordResultProps> = ({ word }) => {
             ))}
             {data.sourceUrls && (
                 <p className="mt-6 text-sm">
-                    Source: <a href={data.sourceUrls[0]} className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">{data.sourceUrls[0]}</a>
+                    Source <a href={data.sourceUrls[0]} className="text-blue-500 underline" target="_blank" rel="noopener noreferrer">{data.sourceUrls[0]}</a>
                 </p>
             )}
         </div>

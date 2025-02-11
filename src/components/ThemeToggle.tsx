@@ -11,7 +11,7 @@ const ThemeToggle = () => {
     return (
         <button
             onClick={() => setDarkMode(!darkMode)}
-            className="p-2 rounded-full hover:bg-gray-200 transition"
+            className="p-2 rounded-lg hover:bg-base-200 transition"
         >
             {!darkMode ? <FiSun size={24} /> : <FiMoon size={24} />}
         </button>
